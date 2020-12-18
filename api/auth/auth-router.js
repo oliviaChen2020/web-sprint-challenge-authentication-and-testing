@@ -64,7 +64,7 @@ router.post('/login', (req, res) => {
           res
             .status(200)
             // the server needs to return the token to the client, attach the token as part of the response
-            .json({ messgae: 'Welcome back ' + user.username, token });
+            .json({ message: 'Welcome back ' + user.username, token });
           // entering existing user and correct password
         } else {
           // entering wrong password
