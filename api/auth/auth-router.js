@@ -17,7 +17,7 @@ router.post('/register', (req, res) => {
     // adding the user credential to the database
     Users.add(credentials)
       .then((user) => {
-        res.status(201).json([user]);
+        res.status(201).json(user);
       })
       .catch((error) => {
         console.log(error);
